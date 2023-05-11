@@ -1,4 +1,16 @@
-[2016-??-??] - Version 1.0.3dev
+[2018-??-??] - Version 1.0.3dev
+	* Fixed crash when trying to read an empty file
+	* Fixed bug with writing references (see issue #234)
+	* Added PECL package.xml to allow installation via pecl
+	* Added ExcelSheet::AS_STRING const to use with write operations (see PR 183 by ederuiter)
+	* Added new methods (requires LibXL 3.8.0)
+		- ExcelBook::addPictureAsLink()
+		- ExcelBook::moveSheet()
+		- ExcelSheet::addDataValidation()
+		- ExcelSheet::addDataValidationDouble()
+		- ExcelSheet::removeDataValidations()
+	* Added ExcelBook::getLibXlVersion()
+	* Added ExcelBook::getPhpExcelVersion()
 
 [2016-06-23] - Version 1.0.2
 	* Fixed bug in ExcelSheet::addPictureDim() (see issue #120)
@@ -10,6 +22,8 @@
 		- ExcelBook::printRepeatRows()
 	* Added support for LibXL 3.6.3
 	* ExcelSheet::addPictureDim() & ExcelSheet::addPictureScaled() now support position parameters
+	* Includes official PHP7 release
+	* Added support for libxl compiled from source
 
 [2015-02-26] - Version 1.0.1
 	* Added methods
