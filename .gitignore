@@ -4,7 +4,6 @@
 *.la
 .deps
 .libs
-.idea
 Makefile
 Makefile.fragments
 Makefile.global
@@ -66,3 +65,5 @@ tests/*/*/*.php
 tests/*/*/*.exp
 tmp-php.ini
 libxl/*
+.idea/*
+/.idea/workspace.xml
