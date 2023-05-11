@@ -23,23 +23,23 @@ Please see the ```docs/``` and the ```tests/``` directory.
 ``` shell
 # change into php source files directory
 
-cd php-7.x.x
+cd php-8.x.x
 
 # clone repository into php extension dir
-git clone https://github.com/iliaal/php_excel.git -b php7 ext/excel
+git clone https://github.com/iliaal/php_excel.git -b php8 ext/excel
 
-# to build php7 module, you should use php7 git branch
-cd ext/excel && git checkout php7 && cd ../..
+# to build php8 module, you should use php8 git branch
+cd ext/excel && git checkout php8 && cd ../..
 
 # rebuild configure
 ./buildconf --force
 
 # replace <PATH> with the file path to the extracted libxl files
 # on a 32-bit platform use
-./configure --with-excel=shared --with-libxl-incdir=<PATH>/libxl-3.6.5.0/include_c --with-libxl-libdir=<PATH>/libxl-3.6.5.0/lib
+./configure --with-excel=shared --with-libxl-incdir=<PATH>/libxl-4.1.2/include_c --with-libxl-libdir=<PATH>/libxl-4.1.2/lib
 
 # on a 64-bit platform use
-./configure --with-excel=shared --with-libxl-incdir=<PATH>/libxl-3.6.5.0/include_c --with-libxl-libdir=<PATH>/libxl-3.6.5.0/lib64
+./configure --with-excel=shared --with-libxl-incdir=<PATH>/libxl-4.1.2/include_c --with-libxl-libdir=<PATH>/libxl-4.1.2/lib64
 ```
  
 ### Windows
@@ -47,10 +47,10 @@ cd ext/excel && git checkout php7 && cd ../..
 Pre-build packages for Windows can be downloaded [here](https://www.apachelounge.com/viewtopic.php?t=6617). To build the package for
 Windows on your own you may want to visit this [project](https://github.com/johmue/win-php-sdk-builder).
 
-### PHP7
+### PHP8
 
 * requires LibXL 3.6.0+
-* use the php7 branch of the github repo
+* use the php8 branch of the github repo
 
 ## Getting started
 
