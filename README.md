@@ -163,7 +163,7 @@ class MyExcelBook extends \ExcelBook
 After you have build the extension you can use ```nmake test``` to run the test suite against the php_excel extension.
 
 ``` shell
-..\php-7.1.4> nmake test TESTS="-d extension=php_excel.dll -d date.timezone=\"America/Toronto\" -d excel.license_name=\"LICENSE_NAME\" -d excel.license_key=\"LICENSE_KEY\" ./ext/php_excel"
+..\php-8.2.4> nmake test TESTS="-d extension=php_excel.dll -d date.timezone=\"America/Toronto\" -d excel.license_name=\"LICENSE_NAME\" -d excel.license_key=\"LICENSE_KEY\" ./ext/php_excel"
 ```
 
 ### Further reading
