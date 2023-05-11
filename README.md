@@ -26,7 +26,7 @@ Please see the ```docs/``` and the ```tests/``` directory.
 cd php-8.x.x
 
 # clone repository into php extension dir
-git clone https://github.com/iliaal/php_excel.git -b php8 ext/excel
+git clone https://github.com/doPhp/excel.git -b php8 ext/excel
 
 # to build php8 module, you should use php8 git branch
 cd ext/excel && git checkout php8 && cd ../..
