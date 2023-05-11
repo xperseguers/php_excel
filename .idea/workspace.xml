@@ -43,7 +43,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "update__ignore",
     "last_opened_file_path": "/Users/do/dev/doPhp/excel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683761430105</updated>
-      <workItem from="1683761431106" duration="5226000" />
+      <workItem from="1683761431106" duration="5863000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit from Jan-E/php_excel">
       <created>1683761728804</created>
@@ -101,7 +101,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="php7_with_pulls" />
+                        <option value="update_ignore" />
                       </list>
                     </value>
                   </entry>
