@@ -16,6 +16,9 @@ date.timezone=America/Toronto
 	var_dump($s->colWidth(1));
 	var_dump($s->rowHeight(4));
 
+	var_dump($s->colWidthPx(1));
+	var_dump($s->rowHeightPx(4));
+
     $s->setColWidth(2, 2, -1);
     var_dump($s->colWidth(2));
 	
@@ -30,7 +33,7 @@ date.timezone=America/Toronto
     
 	echo "OK\n";
 ?>
---EXPECTF--
+--EXPECT--
 float(55)
 float(50)
 float(8)
