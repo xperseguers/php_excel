@@ -66,3 +66,5 @@ please see <http://www.php.net>.
 
 PHP includes the Zend Engine, freely available at
 <http://www.zend.com>.
+
+[Online copy of the PHP License v 3.01](https://www.php.net/license/3_01.txt)
