@@ -1,6 +1,6 @@
 ## Description
 
-This extension uses libXl library to provide API for generating or parsing
+This extension uses libXL library to provide API for generating or parsing
 all Excel files.
 
 `libxl` is a high-performance mechanism for working with Excel files and is
