@@ -22,7 +22,7 @@ jobs:
     - name: get libXL
       run: |
             cd /tmp
-            wget https://www.libxl.com/download/libxl-lin-4.1.2.tar.gz --no-check-certificate
+            wget --no-check-certificate https://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
             tar -zxv -f libxl-lin-4.1.2.tar.gz
             cp -v /tmp/libxl-${LIBXL_VERSION}/lib64/libxl.so /usr/local/lib/libxl.so
             mkdir -p /usr/local/include/libxl_c/ \
