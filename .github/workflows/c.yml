@@ -24,8 +24,10 @@ jobs:
 #       with:
 #         args: https://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
 #         args: --no-check-certificate https://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
-    - name: wget libXL
-      run: wget --no-check-certificate http://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
+#     - name: wget libXL
+#       run: wget --no-check-certificate http://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
+    - name: curl libXL
+      run: curl -fsSL http://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
 #       run: |
 #             cd /tmp
 #             wget --no-check-certificate https://www.libxl.com/download/libxl-lin-4.1.2.tar.gz
