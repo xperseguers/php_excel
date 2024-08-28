@@ -1699,6 +1699,21 @@ class ExcelSheet
 	{
 	} // writeRow
 
+    /**
+     * Write formula with value into a cell
+     *
+     * @since libXL 3.7.0.0
+     * @param int $row 0-based row number
+     * @param int $column 0-based column number
+     * @param mixed $expr
+     * @param mixed $value
+     * @param ExcelFormat $format (optional, default=null)
+     * @return bool
+     */
+    public function writeFormula($row, $column, $expr, $value, $format = null)
+    {
+    } // writeFormula
+
 	/**
 	* Returns the zoom level of the current view as a percentage
 	*
