@@ -1442,6 +1442,18 @@ class ExcelSheet
     } // setTabColor
 
     /**
+     * Sets the RGB color for the sheet's tab.
+     *
+     * @param int $red
+     * @param int $green
+     * @param int $blue
+     * @return bool
+     */
+    public function setTabRgbColor($red, $green, $blue)
+    {
+    } // setTabRgbColor
+
+    /**
      * Gets repeated columns on each page from colFirst to colLast. Returns false
      * if repeated columns aren't found.
      *

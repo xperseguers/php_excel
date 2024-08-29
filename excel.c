@@ -4957,8 +4957,28 @@ EXCEL_METHOD(Sheet, setTabColor)
 
 	SHEET_FROM_OBJECT(sheet, object);
 
-	// @todo check for XLSX format
 	xlSheetSetTabColor(sheet, color);
+	RETURN_TRUE;
+}
+/* }}} */
+
+/* {{{ proto long ExcelSheet::setTabRgbColor(int red, int green, int blue)
+	Sets the RGB color for the sheet's tab. */
+EXCEL_METHOD(Sheet, setTabRgbColor)
+{
+	zval *object = getThis();
+	SheetHandle sheet;
+	zend_long red = 0;
+	zend_long green = 0;
+	zend_long blue = 0;
+
+	if (zend_parse_parameters(ZEND_NUM_ARGS(), "lll", &red, &green, &blue) == FAILURE) {
+		RETURN_FALSE;
+	}
+
+	SHEET_FROM_OBJECT(sheet, object);
+
+	xlSheetSetTabRgbColor(sheet, red, green, blue);
 	RETURN_TRUE;
 }
 /* }}} */
@@ -6574,6 +6594,12 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_Sheet_setTabColor, 0, 0, 0)
 	ZEND_ARG_INFO(0, color)
 ZEND_END_ARG_INFO()
 
+ZEND_BEGIN_ARG_INFO_EX(arginfo_Sheet_setTabRgbColor, 0, 0, 3)
+	ZEND_ARG_INFO(0, red)
+	ZEND_ARG_INFO(0, green)
+	ZEND_ARG_INFO(0, blue)
+ZEND_END_ARG_INFO()
+
 ZEND_BEGIN_ARG_INFO_EX(arginfo_Sheet_table, 0, 0, 1)
 	ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO()
@@ -6932,6 +6958,7 @@ zend_function_entry excel_funcs_sheet[] = {
 #endif
 #if LIBXL_VERSION >= 0x03070000
 	EXCEL_ME(Sheet, setTabColor, arginfo_Sheet_setTabColor, 0)
+	EXCEL_ME(Sheet, setTabRgbColor, arginfo_Sheet_setTabRgbColor, 0)
 	EXCEL_ME(Sheet, applyFilter, arginfo_Sheet_applyFilter, 0)
 	EXCEL_ME(Sheet, autoFilter, arginfo_Sheet_autoFilter, 0)
 	EXCEL_ME(Sheet, removeFilter, arginfo_Sheet_removeFilter, 0)
