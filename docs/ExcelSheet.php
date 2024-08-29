@@ -1021,7 +1021,7 @@ class ExcelSheet
 	} // readCol
 
 	/**
-	* Read comment from a cell
+	* Read comment from a cell (only for xls files)
 	*
 	* @param int $row 0-based row number
 	* @param int $column 0-based column number
@@ -1659,7 +1659,7 @@ class ExcelSheet
 	} // writeCol
 
 	/**
-	* Write comment to a cell
+	* Write comment to a cell (only for xls files)
 	*
 	* @param int $row 0-based row number
 	* @param int $column 0-based column number
