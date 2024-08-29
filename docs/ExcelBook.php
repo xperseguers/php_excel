@@ -87,6 +87,16 @@ class ExcelBook
     } // addFormat
 
     /**
+     * Add or copy an ExcelConditionalFormat object
+     *
+     * @return ExcelConditionalFormat
+     * @since libXL 4.1.0.0
+     */
+    public function addConditionalFormat(ExcelConditionalFormat  $conditionalFormat = null)
+    {
+    } // addConditionalFormat
+
+    /**
      * Adds a picture to the workbook as link (only for xlsx files).
      * Supports BMP, DIB, PNG, JPG and WMF picture formats. Use picture identifier with
      * \ExcelSheet::setPictureDim() or \ExcelSheet::setPictureScale()

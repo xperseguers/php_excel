@@ -298,6 +298,16 @@ class ExcelSheet
     } // removeFilter
 
     /**
+     * Add conditional formatting rules to the sheet (only for xlsx files).
+     *
+     * @return ExcelConditionalFormatting
+     * @since libXL 4.1.0.0
+     */
+    public function addConditionalFormatting()
+    {
+    } // addConditionalFormatting
+
+    /**
      * Get the cell format
      *
      * @param int $row 0-based row number
