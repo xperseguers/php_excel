@@ -5468,7 +5468,7 @@ EXCEL_METHOD(FilterColumn, getCustomFilter)
 	zval *object = getThis();
 	FilterColumnHandle filtercolumn;
 	int op1, op2, andOp;
-	char *v1 = NULL, *v2 = NULL;
+	const char *v1 = NULL, *v2 = NULL;
 
 	FILTERCOLUMN_FROM_OBJECT(filtercolumn, object);
 
